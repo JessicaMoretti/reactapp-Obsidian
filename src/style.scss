@@ -23,23 +23,30 @@ body,
     background-color: rgb(255, 255, 255);
     display: flex;
     align-items: center;
+    align-content: center;
     justify-content: space-between;
     padding: 1rem 1rem;
     box-shadow: 0 2px 5px rgba(0, 0, 0, 0.3);
 
 
     nav{
+        display: flex;
+
         a{
             color: black;
             text-decoration: none;
-            margin-left: 1.5rem;
-            padding-left: rem;
-        
+            margin-left: 0.5rem;
+            padding: 1rem;
+            
             &:hover{
                 color: white;
                 background-color: black;
-                padding: 0.8rem;
             }
+        }
+
+        #carrito{
+           margin-left: 1rem;
+           align-self: center;
         }
     }
 }
@@ -70,6 +77,7 @@ main{
     }
 }
 
+
 #main__footer{
     background-color: rgb(0, 0, 0);
     display: grid;
@@ -82,17 +90,21 @@ main{
     #contacto__redes{
         font-size: 1rem;
         font-weight: bolder;
-        color: aqua;
+        color: white;
     }
 
     #contacto__w{
         font-size: 0.9rem;
         color: $pink;
+        padding-bottom: 1rem;
     }
 
-    #redes a img{
+    #redes a{
         text-decoration: none;
         justify-self: center;
         padding: 1rem;
+        color: white;
+        font-size: 2.5rem;
+        padding-top: 3rem;
     }
 }
