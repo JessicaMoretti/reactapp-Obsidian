@@ -1,8 +1,14 @@
-const ItemListContainer =({greeting}) =>{
+import ItemCount from "./ItemCount"
+
+const ItemListContainer =(props) =>{
     
-    console.log("props.greeting")
+    const greeting=props.greeting
+    console.log(props)
     return(
-        <h1>{greeting}</h1>
+        <>
+            <h1>{greeting}</h1>
+            <ItemCount initial={1} stock={7}/>
+        </>
     );
 }
 

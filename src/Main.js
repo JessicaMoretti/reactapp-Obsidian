@@ -7,7 +7,7 @@ const Main = () => {
     return (
         <main className="container">
             <div id="wab">
-                <ItemListContainer greeting="WE ARE BLACK"/>
+                <ItemListContainer nombre="hola" greeting="WE ARE BLACK" edad={31}/>
             </div>
             <div id= "imagenes">
                 <img src={c1} alt="cartera1" />
