@@ -1,5 +1,5 @@
 import ItemCount from "./ItemCount"
-
+const miOnAdd = () =>{}
 const ItemListContainer =(props) =>{
     
     const greeting=props.greeting
@@ -7,7 +7,7 @@ const ItemListContainer =(props) =>{
     return(
         <>
             <h1>{greeting}</h1>
-            <ItemCount initial={1} stock={7}/>
+            <ItemCount initial={1} stock={7} onAdd={miOnAdd}/>
         </>
     );
 }
