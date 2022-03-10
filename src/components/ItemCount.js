@@ -21,8 +21,8 @@ const ItemCount =(props) => {
     return (
         <>
             <p>Productos Seleccionados : {contador}</p>
-            <button onClick={agregar}>Agregar</button>
-            <button onClick={restar}>Restar</button>
+            <button className="btn" onClick={agregar}>Agregar</button>
+            <button className="btn" onClick={restar}>Restar</button>
         </>
     )
 }

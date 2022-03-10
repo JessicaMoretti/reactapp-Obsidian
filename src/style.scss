@@ -66,13 +66,24 @@ main{
         justify-self: center;
     }
 
-    #imagenes img{
+    #imagenes{
+        display: flex;
         margin: 10;
         padding: 1rem;
-        flex-wrap: nowrap;
+
+        #imagenes img{           
+            flex-wrap: nowrap;
+        }
     }
 }
 
+.btn{
+    padding: 1rem;
+    margin-right: 1.5rem;
+    font-size: 10px;
+    border-radius: 5px;
+    background-color: #ff9fd7;
+}
 
 #main__footer{
     background-color: rgb(0, 0, 0);
