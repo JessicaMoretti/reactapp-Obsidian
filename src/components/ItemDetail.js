@@ -1,16 +1,14 @@
 import React from "react";
 
 const ItemDetail = (props) => {
-  console.log(props);
-
-  const producto = props.producto;
+const item = props.itemProductos;
 
   return (
     <div id="productos">
-      <img src={producto.img} alt={producto.nombre} />
-      <h4>{producto.nombre}</h4>
-      <h5>$ {producto.precio}</h5>
-      <h6>Cartera de uso cotidiano</h6>
+      <img src={item.img} alt={item.nombre} />
+      <h4>{item.nombre}</h4>
+      <h5>$ {item.precio}</h5>
+      <h6>medidas 22cm x 15cm</h6>
     </div>
   );
 };

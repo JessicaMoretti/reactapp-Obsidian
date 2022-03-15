@@ -6,17 +6,17 @@ import c1 from "../images/c1.png"
 import c2 from "../images/c2.png"
 import c3 from "../images/c3.png"
 
-const itemProductos = {
-    nombre: "cartera 1", precio: 1500, img: {c1}
+const itemCartera = {
+    nombre: "cartera 1", precio: 1500, img: c1
 }
 
 const ItemDetailContainer = (props) => {
-    const [itemProductos, setItemProductos] = useState([]);
+    const [itemProductos, setItemProductos] = useState({});
 
     useEffect(() => {
         const promise = new Promise((resolve, reject) => {
             setTimeout(() => {
-                resolve(itemProductos);
+                resolve(itemCartera);
             }, 2000);
         }).then((productos) => {
             setItemProductos(productos);
@@ -27,7 +27,7 @@ const ItemDetailContainer = (props) => {
     return (
         <>
             <h1>{greeting}</h1>
-            <ItemDetail lista={itemProductos} />
+            <ItemDetail itemProductos= {itemProductos} />
 
             {<ItemCount initial={1} stock={7}/>}
         </>
