@@ -3,7 +3,6 @@ import {useState} from "react"
 const ItemCount =(props) => {
     
     let [contador,setContador] = useState(props.initial)
-    console.log(props)
 
     const agregar =()=>{
         if (contador<props.stock){
@@ -12,7 +11,7 @@ const ItemCount =(props) => {
     }
 
     const restar =()=>{
-        if (contador>0){
+        if (contador>1){
             setContador(contador-1)
         }
     }
@@ -22,7 +21,7 @@ const ItemCount =(props) => {
         <>
             <p>Productos Seleccionados : {contador}</p>
             <button className="btn" onClick={agregar}>Agregar</button>
-            <button className="btn" onClick={restar}>Restar</button>
+            <button className="btn" onClick={restar}>Quitar</button>
         </>
     )
 }

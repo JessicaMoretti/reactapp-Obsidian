@@ -1,25 +1,24 @@
 import React, { useEffect, useState } from "react";
 import ItemCount from "./ItemCount"
 import ItemList from "./ItemList";
+import itemProductos from "../Utiles";
 import ItemDetail from "./ItemDetail";
-import c1 from "../images/c1.png"
-import c2 from "../images/c2.png"
-import c3 from "../images/c3.png"
-
-const itemCartera = {
-    nombre: "cartera 1", precio: 1500, img: c1
-}
+import { useParams } from "react-router-dom";
 
 const ItemDetailContainer = (props) => {
-    const [itemProductos, setItemProductos] = useState({});
+    const [itemDeProductos, setItemDeProductos] = useState({});
+
+    const { id } = useParams()
 
     useEffect(() => {
         const promise = new Promise((resolve, reject) => {
             setTimeout(() => {
-                resolve(itemCartera);
+                resolve(itemProductos.find((item) => {
+                    return item.id.toString() === id            
+                }));
             }, 2000);
         }).then((productos) => {
-            setItemProductos(productos);
+            setItemDeProductos(productos);
         });
     });
 
@@ -27,9 +26,9 @@ const ItemDetailContainer = (props) => {
     return (
         <>
             <h1>{greeting}</h1>
-            <ItemDetail itemProductos= {itemProductos} />
+            <ItemDetail itemProductos={itemDeProductos} />
 
-            {<ItemCount initial={1} stock={7}/>}
+            <ItemCount initial={1} stock={7} />
         </>
     );
 }
