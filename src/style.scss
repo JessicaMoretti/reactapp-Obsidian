@@ -56,33 +56,102 @@ main{
 }
 
 .container{
-    display: grid;
+    display:block;
     align-items: center;
     margin: auto;
     padding: 3rem;
-
-    #wab{
-        font-size: 1.8rem;
-        justify-self: center;
-    }
 
     #imagenes{
         display: flex;
         margin: 10;
         padding: 1rem;
 
-        #imagenes img{           
+        #imagenes img{          
             flex-wrap: nowrap;
         }
     }
-}
 
-.btn{
-    padding: 1rem;
-    margin-right: 1.5rem;
-    font-size: 10px;
-    border-radius: 5px;
-    background-color: #ff9fd7;
+    #productos{
+        display:grid;
+        flex-grow: 1;
+        justify-content: center;
+        align-items: center;
+        margin-right: 2rem;
+
+        h4{
+            font-size: 20px;
+            color: #ff9fd7;
+            padding-bottom: 0.5rem;
+            text-align: center;
+        }
+
+        h5{
+            font-size: 18px;
+            padding-bottom: 0.5rem;
+            text-align: center;
+        }
+
+        h6{
+            font-size: 20px;
+            color: #808080;
+            padding-bottom: 0.5rem;
+            text-align: center;
+        }
+
+        p{
+            font-size: 12px;
+            color: rgb(0, 0, 0);
+            padding-bottom: 0.5rem;
+            text-align: center;
+
+        }
+
+        .btn{
+            padding: 1rem;
+            font-size: 10px;
+            border-radius: 10px;
+            margin-bottom: 0.5rem;
+            width: 100%;
+            background-color: #ff9fd7;
+            text-align: center;
+            justify-content: center;
+
+        }
+
+        .confirmar{
+            padding: 1rem;
+            font-size: 10px;
+            border-radius: 10px;
+            margin-bottom: 0.5rem;
+            width: 100%;
+            text-align: center;
+            justify-content: center;
+            background-color: #000000;
+            color: #fff;
+        }
+        
+        .detalle{
+            padding: 1rem;
+            font-size: 10px;
+            border-radius: 10px;
+            margin-bottom: 0.5rem;
+            text-align: center;
+            justify-content: center;
+            color: #fff;
+
+            .detalleB{
+            padding: 1rem;
+            font-size: 10px;
+            border-radius: 10px;
+            margin-bottom: 0.5rem;
+            text-align: center;
+            justify-content: center;
+            color: #000000;
+            background-color: #ff9fd7;
+            }
+        }
+
+    }
 }
 
 #main__footer{

@@ -28,7 +28,6 @@ const ItemDetailContainer = (props) => {
             <h1>{greeting}</h1>
             <ItemDetail itemProductos={itemDeProductos} />
 
-            <ItemCount initial={1} stock={7} />
         </>
     );
 }
