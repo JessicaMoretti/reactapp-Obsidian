@@ -1,6 +1,6 @@
 const CartWidget =() =>{
     return(
-        <div id="carrito">
+        <div className="btn">
             <i className="fa-solid fa-cart-shopping"></i>
         </div>
     );

@@ -7,7 +7,7 @@ const NavBar = () => {
             <Link to= '/'>INICIO</Link>
             <Link to= '/categoria/carteras'>CARTERAS</Link>
             <Link to= '/categoria/mochilas'>MOCHILAS</Link>
-            <Link to= '/carrito'><CartWidget /></Link>
+            <Link className="btn" to= '/carrito'><CartWidget/></Link>
         </nav>
     );
 }

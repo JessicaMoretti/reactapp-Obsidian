@@ -44,7 +44,7 @@ body,
             }
         }
 
-        #carrito{
+         .carrito{
            margin-left: 1rem;
            align-self: center;
         }
@@ -77,6 +77,7 @@ main{
         justify-content: center;
         align-items: center;
         margin-right: 2rem;
+        list-style: none;
 
         h4{
             font-size: 20px;
@@ -108,14 +109,18 @@ main{
 
         .btn{
             padding: 1rem;
-            font-size: 10px;
+            font-size: 12px;
             border-radius: 10px;
             margin-bottom: 0.5rem;
             width: 100%;
             background-color: #ff9fd7;
             text-align: center;
             justify-content: center;
+            list-style: none;
 
+            .pcarrito{
+                list-style: none;
+            }
         }
 
         .confirmar{
