@@ -2,15 +2,20 @@ import React, { useState } from "react";
 import ItemCount from "./ItemCount";
 import { Link } from "react-router-dom";
 import CartWidget from "./CartWidget";
+import {contexto} from './CartContext';
+import { useContext } from "react";
 
 const ItemDetail = (props) => {
   const item = props.itemProductos;
 
+  const carritoContext = useContext(contexto)
+    console.log(carritoContext)
+
   const onAdd = (unidades) => {
+  carritoContext.agregarAlCarrito(props.producto,unidades)
   setconfCompra(false)
-  console.log("Productos agregados al carrito")
-  console.log(unidades)
-  };
+    
+  }
 
   const [confCompra, setconfCompra] =useState(true)
   
