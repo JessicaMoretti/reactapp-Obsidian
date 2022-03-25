@@ -7,8 +7,12 @@ const MiProvider = ({ children }) => {
 
     const [carrito, setCarrito] = useState([]);
 
-    const borrarDelCarrito = (id) => {console.log("borrando") };
-
+    const borrarDelCarrito = (id)=>{
+        
+        const carritoAux = carrito.filter(elemento=>elemento.producto.id !==id);
+        setCarrito(carritoAux)
+    }
+    
 
     const agregarAlCarrito = (producto, cantidad) => {
         const carritoAux = [...carrito];
