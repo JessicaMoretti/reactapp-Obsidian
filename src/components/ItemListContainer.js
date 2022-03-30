@@ -18,7 +18,7 @@ const ItemListContainer = (props) => {
                         itemProductos.filter((item)=>
                         item.categoria===categoria
                     ):itemProductos);                    
-            }, 2000);
+            }, 1000);
         }).then((productos) => {
             setListaProductos(productos);
         });

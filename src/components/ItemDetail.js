@@ -9,7 +9,6 @@ const ItemDetail = (props) => {
   const item = props.itemProductos;
 
   const carritoContext = useContext(contexto)
-  console.log(carritoContext)
 
   const onAdd = (unidades) => {
     carritoContext.agregarAlCarrito(item, unidades)
@@ -25,7 +24,7 @@ const ItemDetail = (props) => {
       <h4>{item.nombre}</h4>
       <h5>$ {item.precio}</h5>
       <h6>Detalle del producto</h6>
-      {confCompra ? <ItemCount initial={1} stock={7} onAdd={onAdd} /> : <Link to='/carrito' className="btn"><p className="pcarrito">Ir al carrito</p><CartWidget /></Link>}
+      {confCompra ? <ItemCount initial={1} stock={7} onAdd={onAdd} /> : <Link to='/carrito' className="btn"><p className="pcarrito">Ir al carrito</p></Link>}
     </div>
 
   );

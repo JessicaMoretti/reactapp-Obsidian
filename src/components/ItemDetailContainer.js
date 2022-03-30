@@ -16,7 +16,7 @@ const ItemDetailContainer = (props) => {
                 resolve(itemProductos.find((item) => {
                     return item.id.toString() === id            
                 }));
-            }, 2000);
+            }, 1000);
         }).then((productos) => {
             setItemDeProductos(productos);
         });
@@ -26,7 +26,7 @@ const ItemDetailContainer = (props) => {
     return (
         <>
             <h1>{greeting}</h1>
-            <ItemDetail itemProductos={itemDeProductos} />
+            {itemDeProductos.id?<ItemDetail itemProductos={itemDeProductos}/>:<p> Cargando</p>}
 
         </>
     );

@@ -44,22 +44,38 @@ body,
             }
         }
 
-         .carrito{
+        .carrito{
            margin-left: 1rem;
            align-self: center;
-        }
+        }        
     }
 }
 
 main{
     flex-grow: 1;
+    
+    #link{
+        display: grid;
+        font-size: 20px;
+        text-decoration: none;
+        padding: 1rem;
+        background-color: #ff9fd7;
+        color: #000000;
+
+        #carritoVacio{
+            font-size: 20px;
+            padding: 1rem;
+        }
+    }
 }
 
 .container{
-    display:block;
+    display:flex;
     align-items: center;
     margin: auto;
     padding: 3rem;
+    list-style: none;
+
 
     #imagenes{
         display: flex;
@@ -70,7 +86,7 @@ main{
             flex-wrap: nowrap;
         }
     }
-
+    
     #productos{
         display:grid;
         flex-grow: 1;
@@ -78,6 +94,7 @@ main{
         align-items: center;
         margin-right: 2rem;
         list-style: none;
+
 
         h4{
             font-size: 20px;
@@ -100,14 +117,23 @@ main{
         }
 
         p{
-            font-size: 12px;
+            font-size: 16px;
             color: rgb(0, 0, 0);
             padding-bottom: 0.5rem;
             text-align: center;
+            list-style: none;
+        }
 
+        .total{
+            font-size: 22px;
+            font-weight: bolder;
+            color:#808080;
+            padding: 1rem;
+            
         }
 
         .btn{
+            display: inline-block;
             padding: 1rem;
             font-size: 12px;
             border-radius: 10px;
@@ -116,12 +142,22 @@ main{
             background-color: #ff9fd7;
             text-align: center;
             justify-content: center;
-            list-style: none;
-
-            .pcarrito{
-                list-style: none;
-            }
         }
+
+        .pcarrito{
+            font-size: 14px;
+            background-color: #000000;
+            color: #ffffff;
+            padding: 0.5rem;
+            border-radius: 10px;
+        }
+
+        .confCompra{
+            background-color: #ff9fd7;
+            border-radius: 10px;
+            padding: 0.5rem;
+        }
+        
 
         .confirmar{
             padding: 1rem;
@@ -158,6 +194,8 @@ main{
 
     }
 }
+
+
 
 #main__footer{
     background-color: rgb(0, 0, 0);
