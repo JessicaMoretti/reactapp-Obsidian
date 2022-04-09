@@ -1,17 +1,20 @@
 import React, { useState } from "react";
 import ItemCount from "./ItemCount";
 import { Link } from "react-router-dom";
-import CartWidget from "./CartWidget";
+import Button from 'react-bootstrap/Button'
 import { contexto } from './CartContext';
 import { useContext } from "react";
 
 const ItemDetail = (props) => {
+  
   const item = props.itemProductos;
+  console.log(props)
 
   const carritoContext = useContext(contexto)
+  console.log(carritoContext)
 
   const onAdd = (unidades) => {
-    carritoContext.agregarAlCarrito(item, unidades)
+    carritoContext.agregarAlCarrito(item,unidades)
     setconfCompra(false)
 
   }
@@ -19,14 +22,15 @@ const ItemDetail = (props) => {
   const [confCompra, setconfCompra] = useState(true)
 
   return (
-    <div id="productos">
+    <div id="cardDetalle">
       <img src={item.img} />
+      <div className="detalleTxt">
       <h4>{item.nombre}</h4>
-      <h5>$ {item.precio}</h5>
-      <h6>Detalle del producto</h6>
-      {confCompra ? <ItemCount initial={1} stock={7} onAdd={onAdd} /> : <Link to='/carrito' className="btn"><p className="pcarrito">Ir al carrito</p></Link>}
+      <h5>Precio: ${item.precio}</h5>
+      <h6>{item.descripcion}</h6>
+      {confCompra ? <ItemCount initial={1} stock={7} onAdd={onAdd} /> : <Link to='/carrito'><Button className="btn">Ir al carrito</Button></Link>}
+      </div>
     </div>
-
   );
 };
 

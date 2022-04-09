@@ -5,7 +5,7 @@ const ItemList = (props) => {
   const listaProductos = props.lista;
 
   return (
-    <div id= "imagenes">
+    <div id= "cardContainer">
       {listaProductos.map((cadaProducto) => {
         return <Item key= {cadaProducto.id} producto={cadaProducto} />;
       })}
