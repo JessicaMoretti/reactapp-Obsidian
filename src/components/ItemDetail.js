@@ -8,10 +8,8 @@ import { useContext } from "react";
 const ItemDetail = (props) => {
   
   const item = props.itemProductos;
-  console.log(props)
 
   const carritoContext = useContext(contexto)
-  console.log(carritoContext)
 
   const onAdd = (unidades) => {
     carritoContext.agregarAlCarrito(item,unidades)

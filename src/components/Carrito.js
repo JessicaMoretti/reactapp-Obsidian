@@ -26,7 +26,6 @@ const Carrito = () => {
     }
     const ventasCollection = collection(db, "ventas");
     const pedido = addDoc(ventasCollection, pedidoVenta)
-    console.log(pedido);
     
   }
   return (

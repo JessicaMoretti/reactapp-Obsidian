@@ -9,7 +9,6 @@ import OBSIDIANLOGO from "../images/OBSIDIANLOGO.png"
 const NavBar = () => {
 
     const {carrito} = useContext(contexto);
-    console.log(carrito)
     
     return (
         <>
