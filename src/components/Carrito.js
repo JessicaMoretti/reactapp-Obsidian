@@ -1,7 +1,7 @@
 import React from 'react'
 import { useContext } from 'react'
 import { contexto } from './CartContext'
-import { navLink } from 'react-router-dom'
+import { Link } from 'react-router-dom'
 import CARRITOVACIO from '../images/CARRITOVACIO.png'
 import Button from 'react-bootstrap/Button'
 import { db } from './Firebase'
@@ -26,19 +26,20 @@ const Carrito = () => {
     }
     const ventasCollection = collection(db, "ventas");
     const pedido = addDoc(ventasCollection, pedidoVenta)
-    
   }
   return (
     <>
       <div className='carritoTextContainer'>
         <h2>Carrito</h2>
         {carrito.length === 0 ? 
-        <navLink to="/" id="link"> 
+        <Link to="/" id="link"> 
           <img src={CARRITOVACIO}></img>
           <p>Carrito Vacio, Ir a Inicio</p>
-        </navLink>: 
-        <p>Cantidad de productos en carrito:{totalItems} .  Precio Total: ${precioTotal}</p>
-        }</div>
+        </Link>: 
+        <p className='totalp'>Productos:{totalItems}  <br/>Total: ${precioTotal}</p>
+        }
+      </div>
+
       {
         carrito.map((elemento) => {
           return( 
