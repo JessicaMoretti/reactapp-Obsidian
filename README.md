@@ -1,70 +1,33 @@
-# Getting Started with Create React App
+#OBSIDIAN Information
 
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+##Description:
 
-## Available Scripts
+HEY THERE!
+I wanna share my experience doing ReactJS project for CoderHouse, OBSIDIAN e-commerce is a fashion website to buy Bags, and accesories using front-end libraries,frameworks, javascript as main language and Firebase as a database.
 
-In the project directory, you can run:
+##Used Libraries and Frameworks:
 
-### `npm start`
+    *bootstrap
+    *node-sass
+    *react-router-dom
+    *firebase
 
-Runs the app in the development mode.\
-Open [http://localhost:3000](http://localhost:3000) to view it in your browser.
 
-The page will reload when you make changes.\
-You may also see any lint errors in the console.
+    *Clone the project on your PC. On the command line, run the following command:
 
-### `npm test`
+     https://jessicamoretti.github.io/reactapp-Obsidian/
 
-Launches the test runner in the interactive watch mode.\
-See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
+    *Install the necessary repository dependencies. On the command line, run the following command:
 
-### `npm run build`
+    npm install
 
-Builds the app for production to the `build` folder.\
-It correctly bundles React in production mode and optimizes the build for the best performance.
+    *Start the repository. On the command line, run the following command:
 
-The build is minified and the filenames include the hashes.\
-Your app is ready to be deployed!
+    npm start
 
-See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
+##How to Use:
 
-### `npm run eject`
+    Browse through the store and filter by category. Select your products and add it to the cart.
+    Go to the shopping cart and review selected items.
+    Complete the purchase by clicking the pink button that's labeled with Finalizar compra.
 
-**Note: this is a one-way operation. Once you `eject`, you can't go back!**
-
-If you aren't satisfied with the build tool and configuration choices, you can `eject` at any time. This command will remove the single build dependency from your project.
-
-Instead, it will copy all the configuration files and the transitive dependencies (webpack, Babel, ESLint, etc) right into your project so you have full control over them. All of the commands except `eject` will still work, but they will point to the copied scripts so you can tweak them. At this point you're on your own.
-
-You don't have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn't feel obligated to use this feature. However we understand that this tool wouldn't be useful if you couldn't customize it when you are ready for it.
-
-## Learn More
-
-You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
-
-To learn React, check out the [React documentation](https://reactjs.org/).
-
-### Code Splitting
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/code-splitting](https://facebook.github.io/create-react-app/docs/code-splitting)
-
-### Analyzing the Bundle Size
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size](https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size)
-
-### Making a Progressive Web App
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app](https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app)
-
-### Advanced Configuration
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/advanced-configuration](https://facebook.github.io/create-react-app/docs/advanced-configuration)
-
-### Deployment
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/deployment](https://facebook.github.io/create-react-app/docs/deployment)
-
-### `npm run build` fails to minify
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify](https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify)
