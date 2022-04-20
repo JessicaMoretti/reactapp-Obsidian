@@ -1,11 +1,11 @@
-#OBSIDIAN Information
+# OBSIDIAN Information
 
-##Description:
+## Description:
 
 HEY THERE!
 I wanna share my experience doing ReactJS project for CoderHouse, OBSIDIAN e-commerce is a fashion website to buy Bags, and accesories using front-end libraries,frameworks, javascript as main language and Firebase as a database.
 
-##Used Libraries and Frameworks:
+## Used Libraries and Frameworks:
 
     *bootstrap
     *node-sass
@@ -25,9 +25,15 @@ I wanna share my experience doing ReactJS project for CoderHouse, OBSIDIAN e-com
 
     npm start
 
-##How to Use:
+## How to Use:
 
     Browse through the store and filter by category. Select your products and add it to the cart.
     Go to the shopping cart and review selected items.
     Complete the purchase by clicking the pink button that's labeled with Finalizar compra.
+## Demo:
+![step1](https://github.com/JessicaMoretti/reactapp-Obsidian/blob/main/src/images/demo1.png)
+![step2](https://github.com/JessicaMoretti/reactapp-Obsidian/blob/main/src/images/demo2.png)
+![step2](https://github.com/JessicaMoretti/reactapp-Obsidian/blob/main/src/images/demo3.png)
+![step4](https://github.com/JessicaMoretti/reactapp-Obsidian/blob/main/src/images/demo4.png)
+
 
